@@ -88,7 +88,7 @@ export const data = {
         },
     ],
 
-    audio: './src/assets/audio/wedding.mp3',
+    audio: './src/assets/audio/sound.mp3',
 
     api: 'https://script.google.com/macros/s/AKfycbzxsJ_Fkpuv8mnysSNm5o2S0jdZGGyjCPZTsWapY7dexGRJ1Kcg2h7SFt980sfhq8RK1A/exec',
 
