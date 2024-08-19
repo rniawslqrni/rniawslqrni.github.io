@@ -1,68 +1,71 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
+    <title>Roniiaweu Github</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Undangan pernikahan - Aku & Kamu">
-    <meta name="keywords" content="wedding invitation, undangan pernikahan">
-    <meta name="author" content="RNIAWSLQRNI">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Undangan Pernikahan">
-    <meta property="og:description" content="Aku & Kamu">
-    <meta property="og:image" content="https://roniiaweu.github.io/wedding/src/assets/images/couple.png">
-    <meta property="og:url" content="https://roniiaweu.github.io">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Undangan Pernikahan">
-    <meta property="twitter:description" content="Aku & Kamu">
-    <meta property="twitter:image" content="https://roniiaweu.github.io/wedding/src/assets/images/couple.png">
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://roniiaweu.github.io/wedding">
-
-    <!-- Fonts Google -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="public/favicon.ico" type="image/x-icon">
-
-    <!-- css -->
-    <link rel="stylesheet" type="text/CSS" href="style.css" />
-    
-    <title>roniiaweu</title>
-	</head>
-	<body>
-	<div class="card">
-    <div class="img">
-      <img src="ra.jpg">
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="https://roniiaweu.github.io/ra.jpg" alt="logo">
+            <h4>RONIIAWEU</h4>
+            <h5>Just 4 Fun</h5>
+            <div class="details">
+                <div class="column">
+                    <h2>1.6K</h2>
+                    <span>Followers</span>
+                </div>
+                <div class="column">
+                    <h2>852</h2>
+                    <span>Following</span>
+                </div>
+            </div>
+            <div class="buttons">
+                <button>Follow</button>
+                <button>Message</button>
+            </div>
+        </div>
+        <div class="themes">
+            <!--button.btn.btn$*5-->
+            <button class="btn btn1"></button>
+            <button class="btn btn2"></button>
+            <button class="btn btn3"></button>
+            <button class="btn btn4"></button>
+            <button class="btn btn5"></button>
+        </div>
+        <a href="https://roniiaweu.github.io/Pr" target="_blank">Code on Git</a>
     </div>
-    <div class="infos">
-      <div class="name">
-        <h2>RONI</h2>
-        <h4>@roniiaweu</h4>
-      </div>
-      <p class="text">
-        I'm a Student, follow me to be the first 
-        who see my new work.
-      </p>
-      <ul class="stats">
-        <li>
-          <h3>Date</h3>
-          <h4>1 Jan 9999</h4>
-        </li>
-        <li>
-          <h3>Time</h3>
-          <h4>00:00</h4>
-        </li>
-      </ul>
-      <div class="links">
-        <button class="follow">Telegram</button>
-        <button class="view">Rebuild Project</button>
-      </div>
-    </div>
-  </div>
-	</body>
+    <script>
+    
+const theme = document.querySelector(':root');
+const btns = document.querySelectorAll(".btn");
+
+btns.forEach(function (btn){
+    btn.addEventListener("click", function (e){
+
+        const color = e.currentTarget.classList;
+
+        if (color.contains("btn1")){
+            theme.style.setProperty('--theme-color', '#3498DB');
+        }
+        else if (color.contains("btn2")){
+            theme.style.setProperty('--theme-color', '#FF1756');
+        }
+        else if (color.contains("btn3")){
+            theme.style.setProperty('--theme-color', '#1CB65D');
+        }
+        else if (color.contains("btn4")){
+            theme.style.setProperty('--theme-color', '#8e44ad');
+        }
+        else{
+            theme.style.setProperty('--theme-color', '#F4B932');
+        }
+    });
+});
+      
+    </script>
+</body>
 </html>
