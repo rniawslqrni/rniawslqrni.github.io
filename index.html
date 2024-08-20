@@ -1,54 +1,88 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <title>Roniiaweu Github</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <!--Google Font-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<title>Roniiaweu Github</title>
+<!--Google Font-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="card">
-            <img src="https://roniiaweu.github.io/ra.jpg" alt="logo">
-            <h4>RONIIAWEU</h4>
-            <h5>Just 4 Fun</h5>
-            <div class="details">
-                <div class="column">
-                    <h2>1.6K</h2>
-                    <span>Followers</span>
-                </div>
-                <div class="column">
-                    <h2>852</h2>
-                    <span>Following</span>
-                </div>
-            </div>
-            <div class="buttons">
-                <button>Follow</button>
-                <button>Message</button>
-            </div>
-        </div>
-        <div class="themes">
-            <!--button.btn.btn$*5-->
-            <button class="btn btn1"></button>
-            <button class="btn btn2"></button>
-            <button class="btn btn3"></button>
-            <button class="btn btn4"></button>
-            <button class="btn btn5"></button>
-        </div>
-        <a href="https://roniiaweu.github.io/Pr" target="_blank">Code on Git</a>
-    </div>
-    <script>
-    
+<div class="container">
+	<div class="card">
+		<img src="https://roniiaweu.github.io/ra.jpg" alt="logo">
+		<h4>RONIIAWEU</h4>
+		<h5>Hi! Welcome to my little playground!</h5>
+		<div class="details">
+			<div class="column">
+				<h2>0</h2>
+				<span>Followers</span>
+			</div>
+			<div class="column">
+				<h2>2</h2>
+				<span>Repositories</span>
+			</div>
+		</div>
+		<div class="buttons">
+			<button>Follow</button>
+			<button href="#" class="modal-trigger" data-modal="modal-name">Repositories</button>
+		</div>
+	</div>
+	<div class="themes">
+		<!--button.btn.btn$*5-->
+		<button class="btn btn1"></button>
+		<button class="btn btn2"></button>
+		<button class="btn btn3"></button>
+		<button class="btn btn4"></button>
+		<button class="btn btn5"></button>
+	</div>
+	<a href="https://t.me/rniawslqrni" target="_blank">Telegram</a>
+</div>
+<!-- Modal -->
+<div class="modal" id="modal-name">
+	<div class="modal-sandbox"></div>
+	<div class="modal-box">
+		<div class="modal-header">
+			<div class="close-modal">&#10006;</div>
+			<h1>Repositories</h1>
+		</div>
+		<div class="modal-body">
+			<a href="/Pr/1/">Wedding Invitation</a>
+			<a href="/Pr/2/">Wedding Invitation (Animation)</a>
+			<br/>
+			<button class="close-modal">Close!</button>
+		</div>
+	</div>
+</div>
+<!-- Script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+    /*
+===============================================================
+Hi! Welcome to my little playground!
+My name is Tobias Bogliolo. 'Open source' by default and always 'responsive',
+I'm a publicist, visual designer and frontend developer based in Barcelona. 
+Here you will find some of my personal experiments. Sometimes usefull,
+sometimes simply for fun. You are free to use them for whatever you want 
+but I would appreciate an attribution from my work. I hope you enjoy it.
+===============================================================
+*/
+$(".modal-trigger").click(function(e){
+  e.preventDefault();
+  dataModal = $(this).attr("data-modal");
+  $("#" + dataModal).css({"display":"block"});
+  // $("body").css({"overflow-y": "hidden"}); //Prevent double scrollbar.
+});
+$(".close-modal, .modal-sandbox").click(function(){
+  $(".modal").css({"display":"none"});
+  // $("body").css({"overflow-y": "auto"}); //Prevent double scrollbar.
+});
+</script>
+<script>
 const theme = document.querySelector(':root');
 const btns = document.querySelectorAll(".btn");
-
 btns.forEach(function (btn){
     btn.addEventListener("click", function (e){
-
         const color = e.currentTarget.classList;
-
         if (color.contains("btn1")){
             theme.style.setProperty('--theme-color', '#3498DB');
         }
@@ -66,7 +100,6 @@ btns.forEach(function (btn){
         }
     });
 });
-      
     </script>
 </body>
 </html>
