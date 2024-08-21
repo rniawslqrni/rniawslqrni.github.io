@@ -183,15 +183,6 @@ a {
 	background:#ECEFF1;
 	padding: 20px 20px;
 }
-.modal-trigger{
-  top: 50%;
-  left: 50%;
-  padding: 20px 40px;
-  background: transparent;
-  color: #ffffff;
-  border: 1px solid #ffffff;
-  text-decoration: none;
-}
 
 .modal-trigger {
   position: absolute;
