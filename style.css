@@ -131,7 +131,7 @@ img {
 }
 a {
 	display:block;
-	background-color:#101010;
+	background-color: var(--theme-color);
 	color:#ffffff;
 	text-align:center;
 	text-decoration:none;
