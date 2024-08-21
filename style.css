@@ -182,9 +182,6 @@ a {
 	padding: 20px 20px;
 }
 
-.modal-trigger:hover {
-  padding: 20px 60px;
-}
 /* Close Button */
 .close-modal {
 	text-align:right;
