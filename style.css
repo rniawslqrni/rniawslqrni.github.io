@@ -184,15 +184,6 @@ a {
 	padding: 20px 20px;
 }
 
-.modal-trigger {
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  transition: ease .2s;
-}
-
-
 .modal-trigger:hover {
   padding: 20px 60px;
 }
