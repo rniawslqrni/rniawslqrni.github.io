@@ -12,7 +12,7 @@ $putih   = "\e[0m";
 
 echo $kuning . "~~ AUTO VISITOR BLOG ~~\n";
 echo $hijau . "Url Website: ";
-$url = trim(fgets(STDIN));
+$url = "https://shaizuro-web.blogspot.com/?m=1";
 $max = "1000000";
 $delay = "1000";
 echo "\n";
